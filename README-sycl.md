@@ -272,7 +272,7 @@ Please install [Visual Studio](https://visualstudio.microsoft.com/) which impact
 
 a. Please follow the procedure in [Get the Intel® oneAPI Base Toolkit ](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html).
 
-Recommend to install to default folder: **/opt/intel/oneapi**.
+Recommend to install to default folder: **C:\Program Files (x86)\Intel\oneAPI**.
 
 Following guide uses the default folder as example. If you use other folder, please modify the following guide info with your folder.
 
@@ -311,15 +311,13 @@ Output (example):
 
 a. Download & install cmake for Windows: https://cmake.org/download/
 
-b. Download & install make for Windows provided by mingw-w64
+b. Download & install mingw-w64 make for Windows provided by w64devkit
 
-- Download binary package for Windows in https://github.com/niXman/mingw-builds-binaries/releases.
+- Download the latest fortran version of [w64devkit](https://github.com/skeeto/w64devkit/releases).
 
-  Like [x86_64-13.2.0-release-win32-seh-msvcrt-rt_v11-rev1.7z](https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev1/x86_64-13.2.0-release-win32-seh-msvcrt-rt_v11-rev1.7z).
+- Extract `w64devkit` on your pc.
 
-- Unzip the binary package. In the **bin** sub-folder and rename **xxx-make.exe** to **make.exe**.
-
-- Add the **bin** folder path in the Windows system PATH environment.
+- Add the **bin** folder path in the Windows system PATH environment, like `C:\xxx\w64devkit\bin\`.
 
 ### Build locally:
 
